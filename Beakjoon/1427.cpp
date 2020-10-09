@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// 내림차순
 //bool desc(int a, int b) {
 //	return a > b;
 //}
@@ -23,7 +24,7 @@ int main()
 		n /= 10; 
 	} 
 
-	sort(v.begin(), v.end(), greater<int>()); //desc
+	sort(v.begin(), v.end(), greater<int>()); //  greater<int>() -> desc
 	
 	for (int i = 0; i < v.size(); i++) {
 		cout << v[i];
