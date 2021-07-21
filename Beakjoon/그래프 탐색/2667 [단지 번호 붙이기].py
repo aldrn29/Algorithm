@@ -3,43 +3,40 @@ from collections import deque
 
 n = int(input())
 m = [list(map(int, stdin.readline().strip())) for _ in range(n)]
+visited = set()
 
-queue = deque()
-visited = [[False]*n for _ in range(n)]
-count = 0
-num = []
-
-def dfs(x, y) :
-    if m[x][y] == 0 or visited[x][y] : return 0
-
-    apart_num = 0
-    queue.append((x, y))
-    visited[x][y] = True
-
-    dx = [-1, 1, 0, 0]
-    dy = [0, 0, -1, 1]
-
+def bfs(start) : 
+    queue = deque()
+    queue.append(start)
+    cnt = 0
+    
     while queue :
         x, y = queue.popleft()
-        apart_num += 1
 
-        for i in range(4) :
-            nx = x + dx[i]
-            ny = y + dy[i]
+        if (x, y) in visited : continue
+        else : 
+            visited.add((x,y)) 
+            cnt += 1
+        
+        for dx, dy in [(-1, 0), (1, 0), (0, 1), (0, -1)] :
+            nx = x+dx
+            ny = y+dy
 
-            if 0 <= nx < n and 0 <= ny < n :
-                if visited[nx][ny] == False and m[nx][ny] == 1 :
+            if 0 <= nx < n and 0 <= ny < n : 
+                if m[nx][ny] == 1 and (nx, ny) not in visited : 
                     queue.append((nx, ny))
-                    visited[nx][ny] = True
+                    visited.add((x, y))
+                    
+    return cnt
 
-    num.append(apart_num)
-    return 1
 
+count = []
+
+# 모든 정점을 시작점으로 bfs 탐색
 for i in range(n) :
     for j in range(n) :
-        count += dfs(i, j)
+        if m[i][j] == 1 and (i, j) not in visited : 
+            count.append(bfs((i, j)))
 
-print(count)
-num.sort()
-for i in num :
-    print(i)
+print(len(count))
+print('\n'.join(map(str, sorted(count))))
