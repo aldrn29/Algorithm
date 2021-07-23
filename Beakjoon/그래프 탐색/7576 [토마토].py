@@ -4,8 +4,6 @@ from collections import deque
 col, row = map(int, stdin.readline().split())
 matrix = [list(map(int, stdin.readline().split())) for _ in range(row)]
 
-queue = deque()
-visited = [[0]*col for _ in range(row)]
 count = 0 # 익지 않은 토마토
 start = []
 
@@ -16,6 +14,9 @@ for i in range(row) :
             start.append((i, j))
 
 def bfs(start) :
+    queue = deque()
+    visited = [[0]*col for _ in range(row)]
+
     for x, y in start :
         queue.append((x, y))
         visited[x][y] = 0
