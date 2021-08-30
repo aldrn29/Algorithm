@@ -60,11 +60,11 @@ def solve(idx, s) :
 
     for i in range(10) : 
         if visited[i] == 0 :
-            if idx == 0 or check(s[-1], str(i), s_list[idx]) :
+            if idx == 0 or check(s[-1], str(i), s_list[idx-1]) :
                 visited[i] = True
                 solve(idx+1, s+str(i))
                 visited[i] = False
 
-solve(-1, "")
+solve(0, "")
 print(max_num)
 print(min_num)
