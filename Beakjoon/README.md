@@ -21,4 +21,14 @@
 <a href="https://github.com/aldrn29/Algorithm/blob/master/Beakjoon/%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89/5547%20%5B%EC%9D%BC%EB%A3%A8%EB%AF%B8%EB%84%A4%EC%9D%B4%EC%85%98%5D.py">5547 [일루미네이션]</a>  
 <a href="https://github.com/aldrn29/Algorithm/blob/master/Beakjoon/%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89/2589%20%5B%EB%B3%B4%EB%AC%BC%EC%84%AC%5D.py">2589 [보물섬]</a>  
 <a href="https://github.com/aldrn29/Algorithm/blob/master/Beakjoon/%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89/1926%20%5B%EA%B7%B8%EB%A6%BC%5D.py">1926 [그림]</a>  
-<a href="">1743 [음식물 피하기]</a>  
+<a href="https://github.com/aldrn29/Algorithm/blob/master/Beakjoon/%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89/1743%20%5B%EC%9D%8C%EC%8B%9D%EB%AC%BC%20%ED%94%BC%ED%95%98%EA%B8%B0%5D.py">1743 [음식물 피하기]</a>  
+<a href=""> [숨바꼭질 3]</a>
+<a href=""> []</a>
+<a href=""> []</a>
+<a href=""> []</a>
+<a href=""> []</a>
+<a href=""> []</a>
+<a href=""> []</a>
+<a href=""> []</a>
+<a href=""> []</a>
+<a href=""> []</a>
