@@ -1,5 +1,4 @@
 from itertools import permutations
-from numbers import Number
 
 def solution(numbers):
     answer = []
@@ -8,10 +7,9 @@ def solution(numbers):
 
     for i in range(1, len(numbers)+1) :
         pmt.extend(list(permutations(numbers, i)))
-    print(pmt)
 
     for i in pmt :  # 각 튜플 원소를 합침
-        result.append(int(''.join(s for s in i)))
+        result.append(int(''.join(x for x in i)))
     result = list(set(result)) # 중복 제거
 
     # 소수인지 검사
