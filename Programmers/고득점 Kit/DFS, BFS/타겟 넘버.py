@@ -20,3 +20,7 @@ def solution(numbers, target):
     return answer
 
 print(solution([1,1,1,1,1], 3))
+
+
+# from itertools import product
+
