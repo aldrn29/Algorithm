@@ -2,10 +2,26 @@
 # times : 한 명 심사에 걸리는 시간
 def solution(n, times):
     answer = 0
-    # right는 가장 비효율적으로 심사했을 때 걸리는 시간
-    # 가장 긴 심사시간이 소요되는 심사관에게 n 명 모두 심사받는 경우이다.
+
+    # 걸리는 시간을 이분 탐색의 범위로 잡음
     left, right = 1, max(times) * n
 
+    while left < right :
+        num = 0
+        mid = (left + right) // 2
+        print(left, mid, right)
+
+        for x in times :
+            num += mid // x
+        
+        # 심사한 사람의 수가 기다리는 사람보다 많으면 => 더 적은 시간으로 심사할 수 있음
+        if num >= n :
+            right = mid
+        # 심사한 사람의 수가 기다리는 사람보다 적으면 => 더 많은 시간이 필요함
+        elif num < n :
+            left = mid + 1
+
+        answer = left
     return answer
 
 
