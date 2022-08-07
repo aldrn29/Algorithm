@@ -8,7 +8,7 @@
 ## BFS, DFS
 - 너비 우선 탐색(BFS: Breadth First Search)  
 너비를 우선으로 하여 최단 경로 탐색을 수행, 큐(Queue) 사용
-- 깊이 우선 탐색(DFS: Depth First Search)  
+- 깊이 우선 탐색(DFS: Depth First Search)    
 깊이를 우선으로 하여 최단 경로 탐색을 수행, 스택(Stack) 혹은 재귀함수 사용
 
 <br><br>  
