@@ -24,6 +24,7 @@
 
 # print(sum(result) // len(result))
 
+'''
 n = int(input())
 a = list(map(int, input().split()))
 x = int(input())
@@ -45,6 +46,22 @@ for num in a :
         if num % x == 0 : # [4,2,8,5,7] 이 4의 약수(2)로 나뉘면
             break
     else :
+        result += num
+        cnt += 1
+
+print(result / cnt)
+'''
+
+import math
+
+n = int(input())
+a = list(map(int, input().split()))
+x = int(input())
+result = 0
+cnt = 0
+
+for num in a :
+    if math.gcd(num, x) == 1 :
         result += num
         cnt += 1
 
