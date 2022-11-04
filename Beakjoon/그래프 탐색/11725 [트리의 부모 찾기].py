@@ -26,3 +26,13 @@ dfs(1)
 
 for i in range(2, node+1) :
     print(parent[i])
+
+'''
+while q :
+    x = q.popleft()
+    # 연결된 노드 순회
+    for i in tree[x] :
+        if nodes[i] == 0 : # 부모노드 없으면
+            nodes[i] = x # 부모노드 넣어주기
+            q.append(i) # 그다음 순회할 노드 추가
+'''
