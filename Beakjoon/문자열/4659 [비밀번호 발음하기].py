@@ -1,12 +1,11 @@
 import re
 
-
 def check(s) :
     v = "aeiou"
     p = re.compile('[a|e|i|o|u]')
     m = p.search(s)
     
-    # 1. 모음 하나를 반드시 포함하는 경우
+    # 모음 하나를 반드시 포함하는 경우
     if m == None :
         return False
     else :
@@ -40,8 +39,10 @@ while True :
     else :
         break
 
-    
+
 '''
+# 정규표현식만 이용하여 풀이
+
 while True :
     str = input()
     if str == 'end' :
